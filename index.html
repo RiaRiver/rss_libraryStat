@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        .flex {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .students {
+            flex-basis: 100%;
+        }
+
+        .students h1 {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .students h1 span {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid black;
+        }
+
+        .students h1 span:first-child {
+            background-color: lightcyan;
+        }
+
+        .students h1 span:last-child {
+            background-color: lightgreen;
+        }
+
+        .students .subtitle {
+            font-size: 20px;
+        }
+
+        .wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper p {
+            margin-top: auto;
+        }
+
+        .title,
+        .subtitle,
+        .title2,
+        p {
+            text-align: center;
+        }
+
+        .subtitle {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .st-wrap,
+        .st-wrap2 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .st-wrap .subtitle {
+            flex-basis: 45%;
+        }
+
+        .st-wrap2 .subtitle {
+            flex-basis: 32%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div id="students" class="students">
+            <h1></h1>
+            <div class="st-wrap2">
+                <p class="subtitle"></p>
+                <p class="subtitle"></p>
+                <p class="subtitle"></p>
+            </div>
+        </div>
+        <div class="wrapper wrapper1">
+            <h2 id="t1" class="title"></h2>
+            <div class="st-wrap">
+                <h3 class="subtitle"> </h3>
+                <h3 class="subtitle"> </h3>
+            </div>
+            <p>Scorelabel: score (percent)</p>
+            <div id="chartContainerLP1" style="height: 400px; width: 100%;"></div>
+        </div>
+        <div class="wrapper wrapper2">
+            <h2 id="t2" class="title2"></h2>
+            <div class="st-wrap">
+                <h3 class="subtitle"> </h3>
+                <h3 class="subtitle"> </h3>
+                <h4 class="subtitle"> </h4>
+                <h4 class="subtitle"> </h4>
+            </div>
+            <p>Scorelabel: score (percent)</p>
+            <div id="chartContainerLP2" style="height: 400px; width: 100%;"></div>
+        </div>
+
+        <div class="wrapper wrapper3">
+            <h2 id="t3" class="title"></h2>
+            <div class="st-wrap">
+                <h3 class="subtitle"> </h3>
+                <h3 class="subtitle"> </h3>
+                <h4 class="subtitle"> </h4>
+                <h4 class="subtitle"> </h4>
+            </div>
+            <p>Scorelabel: score (percent)</p>
+            <div id="chartContainerLP3" style="height: 400px; width: 100%;"></div>
+        </div>
+    </div>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
